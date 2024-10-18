@@ -81,11 +81,11 @@ _Fig.1 - the seletion areas created using above 3 tools (left: Selection Brush, 
 The orgianll results are shown in the below table:
 
 _Table 1. The numerical results for each method._
-| Tool | Area (square cm) |
-| ----------- | ----------- |
-| Selection Brush | 8.920 |
-| Polygon | 8.968 |
-| Freehand | 8.950 |
+| Tool            | Area (square cm) |
+| --------------- | ---------------- |
+| Selection Brush | 8.920             |
+| Polygon         | 8.968             |
+| Freehand        | 8.950             |
 
 ### Conclusion 
 
@@ -183,8 +183,6 @@ _Fig.3 - Screenshot of Fiji interface._
 Using other known implementations and compare the output images
 As for Sobel edge detector, here are several trusted and well known implementations (e.g., OpenCV, Skimage, Find edge in Fiji...). Run these operators using the same input image which being used in Q2. Then compare the output images pixel by pixel, if the output images match, the code is likely working well. If there is difference between output images, indicates potential issues in the script. In this case, I applied build-in Sobel detector in Fiji. According to [Fiji Documentation (link to the website)](https://imagej.net/ij/docs/menus/process.html#find), the `Process > Find Edges` tool in Fiji uses a Sobel edge detector (Two 3x3 convolution kernels are used to generate vertical and horizontal derivatives. The final image is produced by combining the two derivatives using the square root of the sum of the squares.) which is exactly the same method as instructed in Q2. The output image matches with the output image created by script, so the script is working correctly.
 
-![fig4](process-findedge.png)
-_Fig.4 - The output image using Find Edges processor in Fiji._
 
 **2. Test the script with simple and well-known test images and compare the expected output and the actual output image**
 
